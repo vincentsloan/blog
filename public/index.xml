@@ -7,5 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Main</title>
+      <link>https://example.org/main/</link>
+      <pubDate>Fri, 03 Nov 2023 15:37:18 -0700</pubDate>
+      <guid>https://example.org/main/</guid>
+      <description>== Disrupting the snack industry
+GenAI Blockchain Drones Business Intelligence </description>
+    </item>
   </channel>
 </rss>

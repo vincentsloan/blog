@@ -1,7 +1,11 @@
 +++
 title = 'Main'
 date = 2023-11-03T15:37:18-07:00
-draft = true
+draft = false
 +++
 
-hello world!
+== Disrupting the snack industry
++ GenAI
++ Blockchain
++ Drones
++ Business Intelligence
