@@ -33,4 +33,4 @@ url="mailto:vincentsloan@gmail.com"
 
 [module]
 [[module.imports]]
-  path = 'github.com/LordMathis/hugo-theme-nightfall'
+  path = 'github.com/manid2/hugo-xterm'
