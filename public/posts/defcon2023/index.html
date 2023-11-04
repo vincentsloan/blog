@@ -1,0 +1,631 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-language" content="en-us" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>2023 DEF CON Payment Village &middot; Vincent on the Internet</title>
+    <meta name="title" content="2023 DEF CON Payment Village &middot; Vincent on the Internet" />
+  <meta name="description" content="" />
+  <link rel="canonical" href="https://blog.vincentsloan.com/posts/defcon2023/" />
+  
+  
+
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="/css/main.css"
+  integrity=""
+/>
+
+
+
+  <link rel="icon" sizes="192x192" href="/logo-192.png" />
+    <link rel="apple-touch-icon" href="/logo-192.png" />
+    <link rel="mask-icon" href="/logo.svg" color="blue" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+
+
+  <meta property="og:title" content="2023 DEF CON Payment Village" />
+<meta property="og:description" content="August 2023, I had the privilege of attending DEF CON 31, the renowned security and hacking conference. This was my first time, so I spent some time preparing and scoping out talks and workshops. Some grizzled veterans suggested I look at villages, dedicated spaces around certain topics. One village stood out to me immediately, the Payment Village!
+So, on Friday August 11th 2023, I spent almost the entire day at the Payment Village for the morning workshop and hacking challenges throughout the afternoon." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.vincentsloan.com/posts/defcon2023/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-04T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="2023 DEF CON Payment Village"/>
+<meta name="twitter:description" content="August 2023, I had the privilege of attending DEF CON 31, the renowned security and hacking conference. This was my first time, so I spent some time preparing and scoping out talks and workshops. Some grizzled veterans suggested I look at villages, dedicated spaces around certain topics. One village stood out to me immediately, the Payment Village!
+So, on Friday August 11th 2023, I spent almost the entire day at the Payment Village for the morning workshop and hacking challenges throughout the afternoon."/>
+
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "Posts",
+    "name": "2023 DEF CON Payment Village",
+    "headline": "2023 DEF CON Payment Village",
+    "description": "August 2023, I had the privilege of attending DEF CON 31, the renowned security and hacking conference. This was my first time, so I spent some time preparing and scoping out talks and workshops. Some grizzled veterans suggested I look at villages, dedicated spaces around certain topics. One village stood out to me immediately, the Payment Village!\nSo, on Friday August 11th 2023, I spent almost the entire day at the Payment Village for the morning workshop and hacking challenges throughout the afternoon.",
+    "inLanguage": "en-us",
+    "author" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "creator" : {
+      "@type": "Person",
+      "name": ""
+    },
+    "copyrightHolder": "",
+    "copyrightYear": "2023",
+    "dateCreated": "2023-11-04T00:00:00\u002b00:00",
+    "datePublished": "2023-11-04T00:00:00\u002b00:00",
+    "dateModified": "2023-11-04T00:00:00\u002b00:00",
+    "url" : "https:\/\/blog.vincentsloan.com\/posts\/defcon2023\/",
+    "wordCount": "1653",
+    "keywords": []
+  }
+  </script>
+
+
+
+
+  
+    <meta name="generator" content="Hugo 0.120.3">
+  
+  
+  <script
+    defer
+    src="/js/main.js"
+    integrity=""
+  ></script>
+  <script>
+    if (!('theme' in localStorage)) {
+      localStorage.theme = "light";
+    }
+    if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'auto') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  
+
+</head>
+
+  <body class="min-h-full w-full" x-data="{ up: false }">
+    
+
+    <div
+  x-data="{ open: false }"
+  @keydown.window.escape="open = false"
+  class="sticky inset-x-0 top-0 z-10 bg-neutral-50/50 text-neutral-900 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:backdrop-blur-xl after:content-[''] dark:bg-neutral-800/60 dark:text-neutral-200"
+>
+  <div class="fixed z-10 flex h-screen w-48 lg:hidden" :class="open ? '' : 'hidden'" x-ref="dialog" aria-modal="true">
+    <div
+      class="fixed inset-0 bg-gray-950/25"
+      :class="open ? '' : 'hidden'"
+      x-show="open"
+      x-transition:enter="transition-opacity ease-linear duration-300"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition-opacity ease-linear duration-300"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      x-description="Off-canvas menu overlay, show/hide based on off-canvas menu state."
+      @click="open = false"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="fixed inset-0 flex h-full w-full max-w-xxs flex-col overflow-y-auto bg-neutral-50 pb-12 shadow-xl dark:bg-neutral-800"
+      :class="open ? '' : 'hidden'"
+      x-show="open"
+      x-transition:enter="transition ease-in-out duration-300"
+      x-transition:enter-start="-translate-x-full"
+      x-transition:enter-end="translate-x-0"
+      x-transition:leave="transition ease-in-out duration-300"
+      x-transition:leave-start="translate-x-0"
+      x-transition:leave-end="-translate-x-full"
+      x-description="Off-canvas menu, show/hide based on off-canvas menu state."
+    >
+      <div class="flex px-4 pb-2 pt-5">
+        <button
+          type="button"
+          title="Close menu"
+          class="-m-2 inline-flex items-center justify-center rounded-md p-2 text-neutral-400"
+          @click="open = false"
+        >
+          <span class="sr-only">Close menu</span>
+          <svg
+            class="h-6 w-6"
+            x-description="Heroicon name: outline/x"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="divide-y divide-neutral-200 py-4">
+        <li
+            class=" flow-root px-4 py-2"
+          >
+            <a href="/" title="Vincent on the Internet" class="-m-2 block p-2 font-medium">Home</a>
+          </li>
+        <li
+            class="
+              bg-neutral-200 dark:bg-neutral-900
+             flow-root px-4 py-2"
+          >
+            <a href="/posts/" title="Posts" class="-m-2 block p-2 font-medium">Blog</a>
+          </li>
+        <li
+            class=" flow-root px-4 py-2"
+          >
+            <a href="/categories/" title="Categories" class="-m-2 block p-2 font-medium">Categories</a>
+          </li>
+        <li
+            class=" flow-root px-4 py-2"
+          >
+            <a href="/tags/" title="Tags" class="-m-2 block p-2 font-medium">Tags</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <header class="dark:shadow-dark shadow">
+    <nav class="container mx-auto flex max-w-7xl items-center px-6 leading-12 lg:px-8 xl:px-12" aria-label="Top">
+        <a
+          class="relative hidden p-2 align-middle lg:block"
+          rel="me"
+          href="/"
+          title="Vincent on the Internet"
+        >
+          <img src="/logo-192.png" class="h-8 w-auto" alt="Vincent on the Internet" />
+        </a>
+
+
+      <button class="lg:hidden" type="button" @click="open = true" aria-label="Open menu">
+        <svg
+          class="block h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div class="mx-2 h-12 flex-grow">
+        <div class="relative h-full w-full">
+          <div class="absolute max-w-full" :class="up ? 'hidden' : ''" x-show="!up" x-transition.duration.750ms>
+            <span class="overflow-hidden text-ellipsis whitespace-nowrap font-semibold tracking-wider"
+              >Vincent on the Internet</span
+            >
+          </div>
+          <template x-if="true">
+            <div
+              class="absolute left-0 right-0 top-0 max-w-full"
+              :class="up ? '' : 'hidden'"
+              x-show="up"
+              x-transition.duration.750ms
+            >
+              <span class="overflow-hidden text-ellipsis whitespace-nowrap">2023 DEF CON Payment Village</span>
+            </div>
+          </template>
+        </div>
+      </div>
+      <ul class="ml-7 hidden shrink list-none flex-row justify-end lg:flex">
+        <li
+            class=" mr-7 border-b-2 border-transparent text-right hover:border-primary-500"
+          >
+            <a class="" href="/" title="Vincent on the Internet">Home</a>
+          </li>
+        <li
+            class="
+              border-primary-500
+             mr-7 border-b-2 border-transparent text-right hover:border-primary-500"
+          >
+            <a class="" href="/posts/" title="Posts">Blog</a>
+          </li>
+        <li
+            class=" mr-7 border-b-2 border-transparent text-right hover:border-primary-500"
+          >
+            <a class="" href="/categories/" title="Categories">Categories</a>
+          </li>
+        <li
+            class=" mr-7 border-b-2 border-transparent text-right hover:border-primary-500"
+          >
+            <a class="" href="/tags/" title="Tags">Tags</a>
+          </li>
+        
+      </ul>
+      <button id="switchTheme" class="flex h-8 w-8 items-center justify-center focus:outline-none">
+        <span class="sr-only">Switch theme</span>
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        
+        <span class="light"></span><span class="dark"></span>
+      </button>
+      <script>
+        document.getElementById("switchTheme").addEventListener("click", function () {
+          if (
+            localStorage.theme === "dark" ||
+            ((!("theme" in localStorage) || localStorage.theme === "auto") &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          ) {
+            document.documentElement.classList.remove("dark");
+            localStorage.theme = "light";
+          } else if (
+            localStorage.theme === "light" ||
+            ((!("theme" in localStorage) || localStorage.theme === "auto") &&
+              window.matchMedia("(prefers-color-scheme: light)").matches)
+          ) {
+            document.documentElement.classList.add("dark");
+            localStorage.theme = "dark";
+          }
+        });
+      </script>
+    </nav>
+  </header>
+</div>
+
+    <main class="container mx-auto my-6 flex max-w-7xl flex-row px-6 lg:px-8 xl:px-12">
+      
+  <article class="mx-auto min-w-0 max-w-prose flex-grow text-lg lg:text-xl">
+    <header class="text-base">
+      <h1
+        class="my-3 text-3xl font-semibold text-neutral-800 dark:text-neutral-200"
+        x-intersect:enter="up = false"
+        x-intersect:leave="up = true"
+      >2023 DEF CON Payment Village
+      </h1>
+      <div class="mb-6 text-base text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row items-center">
+    
+    
+      &lt;time datetime=&#34;2023-11-04 00:00:00 &amp;#43;0000 UTC&#34;&gt;4 November 2023&lt;/time&gt;&lt;span class=&#34;px-2 text-primary-500&#34;&gt;&amp;middot;&lt;/span&gt;&lt;span title=&#34;Reading time&#34;&gt;8 mins&lt;/span&gt;
+    
+
+    
+    
+  </div>
+
+
+      </div>
+    </header>
+    <section class="prose max-w-none text-base  dark:prose-invert">
+      <p>August 2023, I had the privilege of attending DEF CON 31, the renowned security and hacking conference.
+This was my first time, so I spent some time preparing and scoping out talks and workshops. Some grizzled veterans
+suggested I look at villages, dedicated spaces around certain topics. One village stood out to me immediately,
+the Payment Village!</p>
+<p>So, on Friday August 11th 2023, I spent almost the entire day at the Payment Village for the morning
+workshop and hacking challenges throughout the afternoon. I was joined by the infamous GoFundMe alumnus Serguey,
+and my new friend <a
+  href="https://saleemrashid.com"
+  
+    target="_blank" rel="noopener"
+  
+  
+>Saleem</a>
+, 9-year-old wunderkind and offensive security engineer.</p>
+<p>The day started out with a workshop/lecture on the history of credit cards - from the &ldquo;charge tokens&rdquo; of the early 1900s,
+to the well known magnetic stripe cards, and up to the modern EMV/chip cards we use today. EMV cards were meant
+to address all the shortcomings of the magnetic stripe cards, which were easy to spoof/copy. The EMV spec was very
+large though, and contained provisions for &ldquo;backwards compatibility&rdquo; - like emulating magnetic track data
+on the chip.</p>
+<p>Armed with this knowledge, we were given the hacking challenges. We were given some Payment Village branded EMV cards,
+and an Android APK for a Software based Point of Sale (POS) system, which used the Android phone&rsquo;s NFC to read the
+chip. For those without an Android phone, NFC readers and a suite of Windows software was provided.
+The challenges were as follows:</p>
+<ol>
+<li>Charge $100,000 to the card.</li>
+<li>Commit Other Fraudulent Operations.</li>
+<li>Steal 15 cards from the SoftPOS. Provide PAN and Expiry for each card.</li>
+</ol>
+
+<h2 id="charging-100000-to-the-card">Charging $100,000 to the card <a class="heading-anchor" href="#charging-100000-to-the-card" aria-hidden="true">#</a></h2>
+<p>We focused almost entirely on the first challenge - charging $100,000 to the card. The card started out with $100,000 available,
+so we just had to get to a $0 balance.</p>
+<p>We had an Android phone ready to go, so we went the Android APK route rather than reader+Windows - mostly because we
+were familiar with tampering with Android. After installing the SoftPOS APK, the first hurdle to charging $100,000 was clear:
+there was a $10 transaction limit.</p>
+
+<h3 id="hacking-the-apk">Hacking the APK <a class="heading-anchor" href="#hacking-the-apk" aria-hidden="true">#</a></h3>
+<p>So, the first thought was to decompile the APK and see what we could modify or intercept. One common approach is to
+decompile Android APKs with Apktool. Apktool decompiles the bytecode in the APK and produces an intermediate language
+called Smali. It&rsquo;s more readable than bytecode, but certainly not as nice as Java or Kotlin. The nice thing about it
+though, is that the modified Smali is easily converted back into bytecode. This means you can easily make a change,
+and redeploy the modified APK.</p>
+<p>We loaded up Apktool with a very nice VSCode extension called APKLab, and decompiled the SoftPOS APK.
+We enabled debugging, ran a transaction on the app, and monitored the logs with <code>adb logcat</code>. One thing stood out immediately -
+the API calls were being made over plain HTTP. This would make a man-in-the-middle attack trivial.
+So we got excited and hatched a plan - we&rsquo;ll find the string for the API host in the decompiled APK, and point it
+to our own man-in-the-middle server. From there, we could rapidly inspect and manipulate the requests.
+So we set up <code>mitmproxy</code> on our Thinkpad, modified a few lines of the decompiled APK to point the requests there,
+and were able to intercept, modify and replay requests.</p>
+
+<h3 id="emv-tags">EMV tags <a class="heading-anchor" href="#emv-tags" aria-hidden="true">#</a></h3>
+<p>Next, we started looking at the EMV tags. The workshop spent a good amount of time discussing these, so it seemed
+like an obvious place to put some effort.</p>
+<p>Some EMV tags were apparent as part of the API request:</p>
+<pre tabindex="0"><code>amount     = 1000
+trans_type = EMV
+9f15       = 5000
+9f34       = 1f0302
+9f36       = 000F
+9f26       = DFB901237F1E5E1A
+82         = 0040
+5a         = 1016435898071137
+5f36       = 1
+9f37       = A9E06117
+5f2a       = 0840
+9a         = 230811
+9f02       = 000000001000
+type       = purchase
+9c         = 20
+</code></pre><p>We went through some of the tags we were sending and looked them up on emvlab.org. While we were there, we explored other possible tags.</p>
+<p>One EMV tag in particular looked quite interesting and promising, <a
+  href="https://emvlab.org/emvtags/show/t5F36"
+  
+    target="_blank" rel="noopener"
+  
+  
+>Transaction Currency Exponent</a>
+
+With this, we could in theory change a $10 transaction into a $1,000 transaction, without altering any
+other part of the payload! It&rsquo;s not part of the cryptogram, so it could be altered without breaking things.</p>
+<p>We changed the value to &ldquo;0&rdquo;, indicating that 10000 should be interpreted as $1,000 rather than $10. We made a few test requests,
+and were met with the error &ldquo;Not enough money!&rdquo;. It appeared we had successfully drained the account!</p>
+<p>After retracing our steps and attempting reproduce this success however, we discovered the empty account was not due to our
+hacking skills, but rather the fact that we switched up the currency while we were at it (USD to EUR), and the EUR account
+was low or empty already.</p>
+<p>Disappointed but undeterred, we stepped back and tried a more systematic approach.</p>
+
+<h3 id="making-smali-changes">Making Smali changes <a class="heading-anchor" href="#making-smali-changes" aria-hidden="true">#</a></h3>
+<p>Back to the application, we tried a more straight forward method of increasing the transaction amount, which as previously mentioned,
+was limited to $10. If we could raise this limit, we could make quick work of charging the $100,000.</p>
+<p>We looked for the validation error in the Smali code (&ldquo;Price cannot be more than $10 as we do not accept PIN (yet).&rdquo;), and found the
+condition that compared the input to a maximum:</p>
+<pre tabindex="0"><code>NfcHome.Smali
+
+  const/16 v1, 0x3e8
+  
+  const v2, 0x7f0900b0
+
+  if-le v0, v1, :cond_2
+</code></pre><p>The &ldquo;const/16 v1, 0x3e8&rdquo; translated to a constant value of 1000 - the limit in pennies. We changed this to &ldquo;const v1, 0x989680&rdquo;,
+which translated to 10000000, or $100,000 in pennies. We made the change, re-deployed the APK to our Android phone, and gave it a try.</p>
+<p>Our input validation change was successful! The application accepted the large input. Progress. Of course, it failed on the server side.
+The API response came back: &ldquo;Authorization above 10.00 requires a secure cardholder verification, e.g. online/offline PIN&rdquo;.</p>
+<p>So - back to the EMV tags. Rather than looking at the full catalog of EMV tags, we focused on what we were already sending in the request.</p>
+<pre tabindex="0"><code>9f15 
+MCC - Merchant Category Code https://emvlab.org/emvtags/?number=9f15
+
+9f34
+CMV Results https://emvlab.org/emvtags/show/9f34/
+
+9f36
+Application Transaction Counter (ATC) https://emvlab.org/emvtags/show/t9F36/
+
+9f26
+Application Cryptogram  https://emvlab.org/emvtags/?number=9f26
+
+82
+Application Interchange Profile https://emvlab.org/emvtags/?number=82
+
+5a
+PAN (card number) https://emvlab.org/emvtags/?number=5a
+
+9f37
+Unpredictable Number https://emvlab.org/emvtags/?number=9f37
+
+5f2a
+Transaction Currency Code https://emvlab.org/emvtags/?number=5f2a
+
+9a
+Transaction Date https://emvlab.org/emvtags/?number=9a
+
+9f02
+Amount Authorized https://emvlab.org/emvtags/?number=9f02
+</code></pre><p>The API error and input validation both mentioned a PIN code. Looking through the EMV tags cataloged previously,
+it looked like what we needed was in <a
+  href="https://emvlab.org/emvtags/?number=9f34"
+  
+    target="_blank" rel="noopener"
+  
+  
+>9F34, Cardholder Verification Method (CVM) Results</a>
+.
+The application was sending <code>1f0302</code>. We looked this up in an online <a
+  href="https://paymentcardtools.com/emv-tag-decoders/cvm-results"
+  
+    target="_blank" rel="noopener"
+  
+  
+>CVM Results Decoder</a>
+
+which identified this as &ldquo;No CVM Required&rdquo; - a code used for low-value transactions. We looked up other possible values, and
+tried <code>410000</code> which indicates &ldquo;Plaintext PIN verification performed by ICC&rdquo;.</p>
+
+<h3 id="success">Success <a class="heading-anchor" href="#success" aria-hidden="true">#</a></h3>
+<p>We tried again &hellip;
+It worked! After altering the application-side validation, and changing the CVMR tag, we were able to make a $100 transaction.
+We then tried successively larger transactions: $1,000, $10,000, $25,000. They all went through successfully.
+Finally, we reached an API response with &ldquo;Not enough money!&rdquo;.</p>
+
+<h2 id="other-fraud-free-money">Other Fraud (Free Money!) <a class="heading-anchor" href="#other-fraud-free-money" aria-hidden="true">#</a></h2>
+<p>There were a few hints flying around that there was a way to get free money <em>onto</em> the card. Negative transaction values were one thought,
+but we couldn&rsquo;t get away with that. After some trial and error, we found that we could do some shady things with refunds. The ability
+to issue a refund was revealed with an API error we encountered earlier: &ldquo;Transaction Type should be purchase or refund&rdquo;.</p>
+<p>For any transaction made with &ldquo;type=purchase&rdquo;, you could subsequently make a call with &ldquo;type=refund&rdquo;, keeping the rest of the payload the same.
+Cool, so we could get some money back. It became much more interesting however, when we realized you could change the &ldquo;amount&rdquo;. Maybe this existed
+for partial refunds? Either way, you could make a refund for an amount much larger than the previous &ldquo;purchase&rdquo; amount. For example, a purchase for $1.00:</p>
+<pre tabindex="0"><code>GET http://www.paymentvillageprocessing.com/auth_host.php?amount=100&amp;type=purchase&amp;....
+----
+Card xxxx
+Auth Success.
+Receipt No.353640
+$ 1.00
+</code></pre><p>We were able to modify that original request, and get $100 refunded.</p>
+<pre tabindex="0"><code>GET http://www.paymentvillageprocessing.com/auth_host.php?amount=10000&amp;type=refund&amp;....
+----
+Refund complete
+</code></pre><p>Success - free money ($99)!</p>
+<p>Unfortunately, trying to try anything higher than $100 resulted in an error:</p>
+<pre tabindex="0"><code>The amount is above automatic clearing threshold. Call 8-800-PAYMENTS and we will initiate it for you
+</code></pre><p>So, refunding large amounts of money would certainly be possible, but would take some extra time.
+There may have been another EMV tag or the like we could have tweaked to get through the automatic clearing threshold,
+but we couldn&rsquo;t get past it in the time given.</p>
+
+<h2 id="stealing-cards">Stealing Cards <a class="heading-anchor" href="#stealing-cards" aria-hidden="true">#</a></h2>
+<p>We didn&rsquo;t get a chance to try this one. Getting the PAN is trivial - it was already being read and transmitted in the SoftPOS application.
+This was initially surprising to me - I had always thought that part of the whole point of EMV was to keep such things private.</p>
+<p>The expiration date was not being read, and really shouldn&rsquo;t be part of the chip (at least in plaintext). However, we know that this is one
+of those &ldquo;backwards compatibility&rdquo; concessions, in that &ldquo;track 2&rdquo; equivalent data is available, which includes expiration date. I&rsquo;m not sure
+how fun this would been to wire up with Smali modifications but it was certainly possible. There may have been a more obvious answer as well.</p>
+
+<h2 id="closing-thoughts">Closing thoughts <a class="heading-anchor" href="#closing-thoughts" aria-hidden="true">#</a></h2>
+<p>This was a lot of fun! I learned a lot, not just about hacking android APKs and EMV tags&hellip;but also about myself.</p>
+<p>In hindsight, hacking the APK for every change was an unnecessarily long feedback loop in the long run. If I were to do this again,
+I&rsquo;d have spent more time trying to generate the proper payload without the Android application.</p>
+
+    </section>
+    <footer class="pt-8">
+      
+  <div class="flex text-base text-neutral-500 dark:text-neutral-400">
+    
+    <div class="place-self-center">
+      
+      
+      
+
+    </div>
+  </div>
+
+
+      
+
+      
+  
+
+
+    </footer>
+  </article>
+  
+  <aside class="mt-3 hidden min-w-0 flex-auto space-y-6 pl-10 pr-4 text-sm lg:block xl:pl-16 xl:text-base">
+    
+    
+      <div class="sticky top-20 min-h-screen self-start overflow-y-auto truncate">
+        <label class="mb-4 text-lg font-bold">Table of contents</label>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#charging-100000-to-the-card">Charging $100,000 to the card</a>
+      <ul>
+        <li><a href="#hacking-the-apk">Hacking the APK</a></li>
+        <li><a href="#emv-tags">EMV tags</a></li>
+        <li><a href="#making-smali-changes">Making Smali changes</a></li>
+        <li><a href="#success">Success</a></li>
+      </ul>
+    </li>
+    <li><a href="#other-fraud-free-money">Other Fraud (Free Money!)</a></li>
+    <li><a href="#stealing-cards">Stealing Cards</a></li>
+    <li><a href="#closing-thoughts">Closing thoughts</a></li>
+  </ul>
+</nav>
+      </div>
+  </aside>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const id = entry.target.getAttribute("id");
+            const elem = document.querySelector(`nav li a[href="#${id}"]`);
+            if (elem !== null) {
+              if (entry.intersectionRatio > 0) {
+                elem.parentElement.classList.add("active");
+              } else {
+                elem.parentElement.classList.remove("active");
+              }
+            }
+          });
+        });
+        const selectors = [];
+        for (let i = 1; i <= 6; i++) {
+          selectors.push(`article h${i}[id]`);
+        }
+        
+        document.querySelectorAll(selectors.join()).forEach((h) => {
+          observer.observe(h);
+        });
+      });
+    </script>
+
+
+    </main>
+    <footer class="bg-neutral-200 text-neutral-500 dark:bg-neutral-900 dark:text-neutral-500">
+  <div class="container mx-auto flex max-w-7xl flex-row px-6 py-4 text-sm lg:px-8 xl:px-12">
+    <div class="flex-1">
+      <p>
+        &copy;
+          2023
+          </p>
+      
+        <p class="text-sm">
+          
+          Powered by <a class="hover:underline hover:text-primary-500" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:text-primary-500" href="https://canstand.github.io/compost" target="_blank" rel="noopener noreferrer">Compost</a>
+        </p>
+      
+    </div>
+    <div class="flex-1">
+      
+    </div>
+  </div>
+</footer>
+
+
+
+    
+
+  </body>
+</html>

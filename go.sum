@@ -1,2 +1,8 @@
 github.com/LordMathis/hugo-theme-nightfall v0.5.1 h1:xeycc74MTnikZ7tv+V8Lhuu9zrqRpVkaNjqw9eQYVNc=
 github.com/LordMathis/hugo-theme-nightfall v0.5.1/go.mod h1:0tCPxAeg5+tWhv17517Q8Lti/TPh0KNyON/uferEU30=
+github.com/goodroot/hugo-classic v0.0.0-20231016153940-1f91ac5beaf8 h1:kGVcJtj18njVUCWi6qUy9L7JZsQcU+Ha86V+lB7MOmg=
+github.com/goodroot/hugo-classic v0.0.0-20231016153940-1f91ac5beaf8/go.mod h1:2E3jMCk0w68ydJcq1SzzJYcoqRFt/W1f4fqWxeeH1CY=
+github.com/gurusabarish/hugo-profile v0.0.0-20231028175443-6c986070fc78 h1:QHAOWdd2nhjPE/oqheQgQs7azaOS+8VwvOlWzUTFg6U=
+github.com/gurusabarish/hugo-profile v0.0.0-20231028175443-6c986070fc78/go.mod h1:drpVx8hmKaH1c5qiGjGFQ6FU+I1C6ygS/U7AB5nMH44=
+github.com/manid2/hugo-xterm v1.5.0 h1:edv5LE01JLIYuCkHJV4S9QdcHChRtscBnpEp/OGl7Jw=
+github.com/manid2/hugo-xterm v1.5.0/go.mod h1:GfVYdHvhSC/U07C3fOHLl/k2hzc+uQh0oRuy4q7Or3A=
