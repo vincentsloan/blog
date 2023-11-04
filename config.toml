@@ -14,6 +14,7 @@ title = "Vincent on the Internet"
 
 [params]
 author = 'Vincent'
+user = "vincent"
 
 [[params.social]]
 key=0
