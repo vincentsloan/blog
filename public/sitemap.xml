@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/main/</loc>
-    <lastmod>2023-11-03T15:37:18-07:00</lastmod>
+    <loc>https://blog.vincentsloan.com/posts/first-post/</loc>
+    <lastmod>2023-11-02T15:58:50-07:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://blog.vincentsloan.com/posts/</loc>
+    <lastmod>2023-11-02T15:58:50-07:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://blog.vincentsloan.com/</loc>
+    <lastmod>2023-11-02T15:58:50-07:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://blog.vincentsloan.com/categories/</loc>
+  </url><url>
+    <loc>https://blog.vincentsloan.com/tags/index/</loc>
+  </url><url>
+    <loc>https://blog.vincentsloan.com/tags/</loc>
   </url>
 </urlset>

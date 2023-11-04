@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vincent&#39;s Blog</title>
-    <link>https://blog.vincentsloan.com/</link>
-    <description>Recent content on Vincent&#39;s Blog</description>
+    <title>Posts on Vincent&#39;s Blog</title>
+    <link>https://blog.vincentsloan.com/posts/</link>
+    <description>Recent content in Posts on Vincent&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Nov 2023 15:58:50 -0700</lastBuildDate>
-    <atom:link href="https://blog.vincentsloan.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vincentsloan.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
       <link>https://blog.vincentsloan.com/posts/first-post/</link>
