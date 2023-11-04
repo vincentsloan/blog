@@ -4,7 +4,6 @@ date = 2023-11-04
 draft = false
 +++
 
-# 2023 DEF CON Payment Village
 August 2023, I had the privilege of attending DEF CON 31, the renowned security and hacking conference.
 This was my first time, so I spent some time preparing and scoping out talks and workshops. Some grizzled veterans
 suggested I look at villages, dedicated spaces around certain topics. One village stood out to me immediately,
